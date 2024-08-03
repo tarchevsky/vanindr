@@ -1,0 +1,8 @@
+.friends {
+  grid-template-areas:
+          '. avatar avatar .'
+          'avatar avatar avatar avatar'
+          'avatar avatar avatar avatar'
+          'avatar avatar avatar avatar'
+          '. avatar avatar .' / 1fr 1fr 1fr 1fr;
+}
