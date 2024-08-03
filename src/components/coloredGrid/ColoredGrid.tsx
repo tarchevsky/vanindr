@@ -5,7 +5,7 @@ import Image from 'next/image'
 
 const ColoredGrid = () => {
 	return (
-		<FadeIn className={cn(styles.coloredgrid, 'relative py-16')}>
+		<FadeIn className={cn(styles.coloredgrid, 'relative py-16 mb-16 lg:mb-0')}>
 			<Image
 				src='/grass-mob.png'
 				alt='Трава на острове'

@@ -23,7 +23,7 @@ const Friends = () => {
 	]
 
 	return (
-		<div className='relative mb-20'>
+		<div className='relative mb-20 px-5 sm:px-0'>
 			<h3 className='text-4xl font-bold text-center mb-[51px]'>Туристы</h3>
 			<div
 				className={cn(
