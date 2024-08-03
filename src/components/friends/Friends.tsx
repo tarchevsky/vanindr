@@ -39,10 +39,7 @@ const Friends = () => {
 						height={204}
 						alt={friend.person}
 						style={{ gridArea: friend.person }}
-						className={cn(
-							'p-2 border border-black rounded-full',
-							`${friend.person === 'natasha1' ? 'justify-self-center self-center w-[100px] h-[100px] xs:w-[130px] xs:h-[130px] sm:w-[150px] sm:h-[150px]' : ''}`
-						)}
+						className={cn('p-2 border border-black rounded-full')}
 					/>
 				))}
 			</div>
