@@ -18,7 +18,8 @@ const Friends = () => {
 		{ person: 'fedor' },
 		{ person: 'mark' },
 		{ person: 'galina' },
-		{ person: 'dunya' }
+		{ person: 'dunya' },
+		{ person: 'vlasta' }
 	]
 
 	return (
