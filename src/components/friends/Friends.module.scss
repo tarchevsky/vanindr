@@ -1,8 +1,11 @@
 .friends {
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
   grid-template-areas:
-          '. avatar avatar .'
-          'avatar avatar avatar avatar'
-          'avatar avatar avatar avatar'
-          'avatar avatar avatar avatar'
-          '. avatar avatar .' / 1fr 1fr 1fr 1fr;
+          ". ivan masha ."
+          "lesya sukhrob nikita natasha2"
+          "mark fedor evgenia serj"
+          "mama galina dunya olga"
+          ". natasha1 natasha1 .";
+  justify-items: center;
 }
