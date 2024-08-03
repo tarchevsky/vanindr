@@ -33,7 +33,10 @@ const Vibe = () => {
 						</div>
 					</div>
 					<div
-						className={cn(styles.grid, 'grid grid-rows-2 gap-10 w-full h-full')}
+						className={cn(
+							styles.grid,
+							'flex flex-col xl:grid xl:grid-rows-2 gap-10 w-full h-full'
+						)}
 					>
 						<div>
 							<Image

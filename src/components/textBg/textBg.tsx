@@ -8,7 +8,7 @@ const TextBg = () => {
 		<FadeIn
 			className={cn(
 				styles.textbg,
-				'relative h-[200px] xl:h-[100svh] w-full grid gap-5 md:pr-[200px] xl:pr-[300px] items-end xl:items-start'
+				'relative h-[400px] xl:h-[100svh] w-full grid gap-5 md:pr-[200px] xl:pr-[300px] items-end xl:items-start'
 			)}
 		>
 			<Image
@@ -24,7 +24,7 @@ const TextBg = () => {
 					'relative z-10 w-full p-4 h-full xl:p-16 border-2 border-base-100 text-base-100 text-[14px] md:text-xl'
 				)}
 			>
-				<p className={cn('hidden xl:block')}>
+				<p>
 					Историческая справка про Углянь, про реку Озерну. Рассказать про сапы.
 					Что можно их взять или хотя бы один.
 					<br />
