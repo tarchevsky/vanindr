@@ -16,10 +16,10 @@ const HomePage: NextPage = () => {
 	return (
 		<>
 			<Meta title='Главная' metaDesc='Описание страницы' />
-			<Hero src='/shore-1.png' alt='Альт картинки' title='Углынь' />
+			<Hero src='/main-1.png' alt='Альт картинки' title='Углынь' />
 			<div className='relative z-10 m-auto mt-[88svh] md:mt-[90.4svh] xl:mt-[82svh] xl:w-[900px] xl:h-[538px]'>
 				<Image
-					src='/main-1.png'
+					src='/shore-1.png'
 					alt='Отдых у костра'
 					width={900}
 					height={538}
