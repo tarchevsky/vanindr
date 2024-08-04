@@ -6,7 +6,7 @@ const TextBg = () => {
 	return (
 		<FadeIn
 			className={cn(
-				'relative w-full h-[50svh] sm:h-[60svh] xl:h-[90svh] flex sm:items-center xl:items-center justify-end'
+				'relative w-full h-[75svh] sm:h-[60svh] xl:h-[90svh] flex items-start sm:items-center xl:items-center justify-end pt-12 sm:pt-0'
 			)}
 		>
 			<Image
@@ -18,7 +18,7 @@ const TextBg = () => {
 			/>
 			<div
 				className={cn(
-					'relative z-10 w-[40svh] xl:w-[600px] p-4 xl:px-10 xl:py-[71px] md:mr-[10svh] xl:mr-[21svh] sm:border-2 border-base-100 text-base-100 text-[10px] sm:text-sx md:text-[16px]'
+					'relative z-10 w-[40svh] xl:w-[600px] p-4 xl:px-10 xl:py-[71px] mx-10 sm:ml-0 md:mr-[10svh] xl:mr-[21svh] border-2 border-base-100 text-base-100 text-[10px] sm:text-sx md:text-[16px]'
 				)}
 			>
 				<p>
