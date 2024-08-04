@@ -16,15 +16,6 @@ const Hero = ({ title, buttonText, alt, subtitle, src }: HeroProps) => {
 					className='w-full h-full object-cover object-top'
 				/>
 				<div className='absolute bottom-28 left-1/2 -translate-x-1/2 text-center w-full xl:w-auto px-4'>
-					{subtitle ? (
-						<p
-							className={cn(
-								styles.p,
-								'relative z-10 text-base-100 text-left p-2 pb-5 mb-8'
-							)}
-							dangerouslySetInnerHTML={{ __html: subtitle }}
-						/>
-					) : null}
 					<h1
 						className={cn(
 							styles.h1,
@@ -33,6 +24,15 @@ const Hero = ({ title, buttonText, alt, subtitle, src }: HeroProps) => {
 					>
 						{title}
 					</h1>
+					{subtitle ? (
+						<p
+							className={cn(
+								styles.p,
+								'relative z-10 text-base-100 text-left p-2 pt-8 mb-5'
+							)}
+							dangerouslySetInnerHTML={{ __html: subtitle }}
+						/>
+					) : null}
 					{buttonText ? (
 						<button className='btn btn-primary btn-lg mt-3'>
 							{buttonText}
