@@ -1,6 +1,6 @@
 import { useState, useEffect, FC } from 'react'
 import { TbTent } from 'react-icons/tb'
-import { motion } from 'framer-motion'
+import { motion, AnimatePresence } from 'framer-motion'
 
 const ScrollToTop: FC = () => {
 	const [isVisible, setIsVisible] = useState<boolean>(false)
@@ -28,27 +28,43 @@ const ScrollToTop: FC = () => {
 	}, [])
 
 	return (
-		<motion.button
-			onClick={scrollToTop}
-			className='bg-primary'
-			initial={{ opacity: 0, scale: 0 }}
-			animate={isVisible ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0 }}
-			transition={{ duration: 0.3 }}
-			style={{
-				position: 'fixed',
-				bottom: '20px',
-				right: '20px',
-				color: 'white',
-				border: 'none',
-				borderRadius: '50%',
-				padding: '10px',
-				cursor: 'pointer',
-				boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)',
-				display: isVisible ? 'block' : 'none' // Скрываем кнопку, если она не видима
-			}}
-		>
-			<TbTent size={24} color='#fff' />
-		</motion.button>
+		<AnimatePresence>
+			{isVisible && (
+				<motion.div
+					initial={{ scale: 0 }}
+					animate={{ scale: 1 }}
+					exit={{ scale: 0 }}
+					transition={{ type: 'spring', stiffness: 300, damping: 20 }}
+					style={{
+						position: 'fixed',
+						zIndex: 1000,
+						bottom: '20px',
+						left: '50%',
+						transform: 'translateX(-50%)',
+						display: 'flex',
+						justifyContent: 'center',
+						alignItems: 'center'
+					}}
+				>
+					<motion.button
+						onClick={scrollToTop}
+						className='bg-primary'
+						whileHover={{ scale: 1.1 }}
+						whileTap={{ scale: 0.9 }}
+						aria-label='Кнопка наверх страницы'
+						style={{
+							border: 'none',
+							borderRadius: '50%',
+							padding: '20px',
+							cursor: 'pointer',
+							boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)'
+						}}
+					>
+						<TbTent size={24} color='#fff' />
+					</motion.button>
+				</motion.div>
+			)}
+		</AnimatePresence>
 	)
 }
 
