@@ -44,7 +44,7 @@ const Friends = () => {
 				))}
 			</div>
 			<Image
-				src='/friends-bg-full.png'
+				src='/friends/friends-bg-full.png'
 				width={1900}
 				height={800}
 				alt='Фон блока про друзей'
