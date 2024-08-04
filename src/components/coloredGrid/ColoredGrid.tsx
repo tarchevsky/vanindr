@@ -5,7 +5,7 @@ import Image from 'next/image'
 
 const ColoredGrid = () => {
 	return (
-		<FadeIn className={cn(styles.coloredgrid, 'relative py-16 mb-16 lg:mb-0')}>
+		<FadeIn className={cn(styles.coloredgrid, 'relative py-16 mb-16 xl:mb-0')}>
 			<Image
 				src='/grass-mob.png'
 				alt='Трава на острове'
@@ -21,7 +21,7 @@ const ColoredGrid = () => {
 				<div
 					className={cn(
 						styles.square,
-						'glass md:bg-accent bg-transparent p-4 pt-16'
+						'glass md:bg-accent bg-transparent p-4 pt-10'
 					)}
 				>
 					Туалетные “комнаты” в некоторых локациях оборудованы. В иных случаях
@@ -30,7 +30,7 @@ const ColoredGrid = () => {
 				<div
 					className={cn(
 						styles.square,
-						'glass md:bg-neutral bg-transparent p-4 pt-16'
+						'glass md:bg-neutral bg-transparent p-4 pt-10'
 					)}
 				>
 					Некоторые из локаций больше подходят для курсирлвания возле пляжа на
@@ -40,7 +40,7 @@ const ColoredGrid = () => {
 				<div
 					className={cn(
 						styles.square,
-						'glass md:bg-primary bg-transparent p-4 pt-16'
+						'glass md:bg-primary bg-transparent p-4 pt-10'
 					)}
 				>
 					Локации мы подбирали так, чтобы в крайних случаях можно на машине
@@ -49,7 +49,7 @@ const ColoredGrid = () => {
 				<div
 					className={cn(
 						styles.square,
-						'glass md:bg-secondary bg-transparent p-4 pt-16'
+						'glass md:bg-secondary bg-transparent p-4 pt-10'
 					)}
 				>
 					Примерное меню до сих пор обсуждается. Точно планируется гречка или
