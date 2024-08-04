@@ -34,17 +34,9 @@ const ScrollToTop: FC = () => {
 					initial={{ scale: 0 }}
 					animate={{ scale: 1 }}
 					exit={{ scale: 0 }}
-					transition={{ type: 'spring', stiffness: 300, damping: 20 }}
-					style={{
-						position: 'fixed',
-						zIndex: 1000,
-						bottom: '20px',
-						left: '50%',
-						transform: 'translateX(-50%)',
-						display: 'flex',
-						justifyContent: 'center',
-						alignItems: 'center'
-					}}
+					transition={{ type: 'spring', stiffness: 200, damping: 20 }}
+					transformTemplate={({ scale }) => `translateX(-50%) scale(${scale})`}
+					className='fixed z-10 bottom-5 left-1/2'
 				>
 					<motion.button
 						onClick={scrollToTop}
