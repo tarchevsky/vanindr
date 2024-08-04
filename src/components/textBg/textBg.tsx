@@ -1,14 +1,12 @@
 import Image from 'next/image'
 import FadeIn from '@/components/fadeIn/FadeIn'
-import styles from './TextBg.module.scss'
 import cn from 'clsx'
 
 const TextBg = () => {
 	return (
 		<FadeIn
 			className={cn(
-				styles.textbg,
-				'relative lg:h-[900px] xl:h-[100svh] w-full grid gap-5 items-end xl:items-start xl:justify-end'
+				'relative w-full h-[40svh] sm:h-[60svh] xl:h-[90svh] flex items-center xl:items-center justify-end'
 			)}
 		>
 			<Image
@@ -20,8 +18,7 @@ const TextBg = () => {
 			/>
 			<div
 				className={cn(
-					styles.text,
-					'relative z-10 w-full xl:w-[600px] p-4 h-full xl:px-10 xl:py-[71px] border-2 border-base-100 text-base-100'
+					'relative z-10 w-[40svh] xl:w-[600px] p-4 xl:px-10 xl:py-[71px] md:mr-[10svh] xl:mr-[21svh] border-2 border-base-100 text-base-100 text-[10px] sm:text-sx md:text-[16px]'
 				)}
 			>
 				<p>
