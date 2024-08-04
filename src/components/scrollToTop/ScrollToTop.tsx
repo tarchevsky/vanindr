@@ -34,7 +34,7 @@ const ScrollToTop: FC = () => {
 					initial={{ scale: 0 }}
 					animate={{ scale: 1 }}
 					exit={{ scale: 0 }}
-					transition={{ type: 'spring', stiffness: 200, damping: 20 }}
+					transition={{ type: 'spring', stiffness: 150, damping: 20 }}
 					transformTemplate={({ scale }) => `translateX(-50%) scale(${scale})`}
 					className='fixed z-10 bottom-5 left-1/2'
 				>
