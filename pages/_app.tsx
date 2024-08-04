@@ -6,6 +6,7 @@ import { useEffect, useState } from 'react'
 import { AnimatePresence } from 'framer-motion'
 import PageTransition from '@/components/pageTransition/PageTransition'
 import Metrika from '@/components/metrika/Metrika'
+import ScrollToTop from '@/components/scrollToTop/ScrollToTop'
 
 export default function App({ Component, pageProps, router }: AppProps) {
 	const [isClient, setIsClient] = useState(false)
@@ -26,6 +27,7 @@ export default function App({ Component, pageProps, router }: AppProps) {
 					</Layout>
 				</PageTransition>
 			</AnimatePresence>
+			<ScrollToTop />
 			<Metrika yId='97923828' />
 		</>
 	)
